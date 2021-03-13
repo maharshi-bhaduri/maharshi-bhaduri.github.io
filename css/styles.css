@@ -5,7 +5,7 @@
 } */
 
 .intro-container {
-	padding-bottom: 100px;
+	
 }
 
 h2 {
@@ -47,6 +47,7 @@ body {
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 }
+
 
 hr {
       border-style:dotted none none;
@@ -131,10 +132,7 @@ p {
 }
 
 .intro {
-	position: absolute;
-	top: 100px;
 	text-align: left;
-	margin-left: 10%
 }
 
 .introtitlebox {
@@ -176,6 +174,7 @@ p {
 	border-radius: 0;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	padding: 12px 25px 12px 25px;
 }
 
 a {
@@ -184,7 +183,10 @@ a {
 
 .myblurb{
 	padding-bottom: 50px;
+	padding-left: 10%;
 	text-align: left;
+	background-color: #7a7a7a54;
+	padding: 30px;
 }
 
 .btn-outline-dark:hover {
@@ -197,7 +199,27 @@ a {
 	background-color: #ececec86;
 }
 
-.scrollable {
-    overflow-y: scroll;
-	overflow: hidden;
+.carousel .item {
+	height: 100%;
+}
+  
+.fill {
+    height: 100%;
+}
+
+.col-md-4 {
+    min-height: 89.5vh;
+} 
+
+
+.projectcar {
+	padding:35px;
+}
+
+
+@media (max-width: 768.999999px) {
+    .col-md-4 {
+    	min-height: 33.3333333%;
+        height: 33.3333333%;
+    } 
 }

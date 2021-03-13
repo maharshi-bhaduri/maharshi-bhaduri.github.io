@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top navback">
+    <nav id='navbar' class="navbar navbar-expand-lg navbar-light bg-light navback">
         <div class="container-fluid">
           <a class="navbar-brand navlinks" href="index.html">
             <img src="images/MB_logo.png" alt="" width="50">
@@ -38,9 +38,9 @@
         </div>
     </nav>
     
-    <div class="intro container-fluid intro-container">                
+    <div class="intro container-fluid intro-container">              
         <div class="row" style="text-align: center;">
-            <div class="myblurb col-sm-4 col-md-4 align-self-center">
+            <div class="myblurb col-md-4 fill">
                 <div class="introtitlebox">
                     <h1 class="introtitle">Maharshi</h1>
                     <h1 class="introtitle">Bhaduri</h1>
@@ -48,26 +48,35 @@
                 <h4 class="introdesc"><em>designs software</em></h4>
             </div>
 
-            <div class="col-9 col-sm-4 col-md-5 col-lg-3 align-self-center scrollable">
-                <button type="button" class="btn btn-outline-dark btn-square">See work</button>
-                <p>Project1</p>
-                <p>Project1</p>
-                <p>Project1</p>
-                <p>Project1</p>
-                <p>Project1</p>
-                <p>Project1</p>
-                <p>Project1</p>
-                <p>Project1</p>
+            <div class="projectcar col-12 col-md-8 align-self-center">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/car.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/car.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/car.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
             </div>
 
         </div>
     </div>
 
-    <!-- <div class="footer">
-        <p>Calcutta, 2021</p>
-    </div> -->
-	
-
+    
+  
 </body>
 
 </html>
