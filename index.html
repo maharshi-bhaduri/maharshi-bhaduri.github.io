@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav id='navbar' class="navbar navbar-expand-lg navbar-light bg-light navback">
+    <nav id='navbar' class="navbar navbar-expand-lg navbar-light navback">
         <div class="container-fluid">
           <a class="navbar-brand navlinks" href="index.html">
             <img src="images/MB_logo.png" alt="" width="50">
@@ -41,11 +41,22 @@
     <div class="intro container-fluid intro-container">              
         <div class="row" style="text-align: center;">
             <div class="myblurb col-md-4 fill">
-                <div class="introtitlebox">
+              <div class="row" style="text-align: center;">
+                <div class="introtitlebox split-to-side">
                     <h1 class="introtitle">Maharshi</h1>
                     <h1 class="introtitle">Bhaduri</h1>
+                
+                    <h4 class="introdesc"><em>designs software</em></h4>
                 </div>
-                <h4 class="introdesc"><em>designs software</em></h4>
+
+                <div class="split-to-side align-self-center">
+                  
+                    <img class='image-link' src='images/github.png'>
+                    <img class='image-link' src='images/heroku.png'>
+                    <img class='image-link' src='images/linkedin.png'>
+                    
+                </div>
+              </div>
             </div>
 
             <div class="projectcar col-12 col-md-8 align-self-center">
@@ -74,8 +85,19 @@
 
         </div>
     </div>
+<!--     play around with this to display different images for different devices, 
+  so as to not have too small images for mobile displays
 
-    
+    <picture>
+      <source 
+         media="(min-width: 650px)"
+         srcset="images/img1.png">
+      <source 
+         media="(min-width: 465px)"
+         srcset="images/img2.png">
+      <img src="images/img-default.png" 
+      alt="a cute kitten">
+   </picture> -->
   
 </body>
 

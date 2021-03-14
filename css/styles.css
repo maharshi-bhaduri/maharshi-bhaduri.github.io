@@ -137,6 +137,7 @@ p {
 
 .introtitlebox {
 	padding-bottom: 5%;
+	text-align: left;
 }
 
 .introtitle {
@@ -145,6 +146,7 @@ p {
 }
 
 .introdesc {
+	margin-top: 30px;
 	font-family: 'Playfair Display', serif;
 	color: #a51313;
 }
@@ -201,6 +203,7 @@ a {
 
 .carousel .item {
 	height: 100%;
+	border-style: solid;
 }
   
 .fill {
@@ -216,10 +219,18 @@ a {
 	padding:35px;
 }
 
+.image-link {
+	max-width: 50px;
+	margin: 10px;
+}
+
 
 @media (max-width: 768.999999px) {
     .col-md-4 {
     	min-height: 33.3333333%;
         height: 33.3333333%;
     } 
+	.split-to-side {
+		width: 50%;
+	}
 }
