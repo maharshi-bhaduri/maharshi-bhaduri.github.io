@@ -158,6 +158,7 @@ p {
 	text-shadow: 1px 1px 5px #00000052;
 }
 
+
 .navlinks {
 	font-family: 'Playfair Display', serif;
 	color: #a51313;
@@ -249,4 +250,40 @@ a {
 		width: 50%;
 		height: 100%;
 	}
+}
+
+/* experimental designs below */
+
+.background-video{
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+	/* height: 100vh; */
+	z-index: -2;
+}
+
+.background-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.226);
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+}
+
+.fade-in-fade-out { 
+	animation: fadeInAnimation ease 3s; 
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+	0% { 
+		opacity: 0; 
+	} 
+	100% { 
+		opacity: 1; 
+	} 
 }
