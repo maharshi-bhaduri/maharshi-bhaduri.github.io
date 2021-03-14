@@ -4,9 +4,6 @@
 	text-align:center;
 } */
 
-.intro-container {
-	
-}
 
 h2 {
 	font-family: 'Open Sans', sans-serif;
@@ -143,12 +140,22 @@ p {
 .introtitle {
 	font-family: 'Playfair Display', serif;
 	color:#ffffff;
+	text-shadow: 1px 1px 5px #0000006b;
 }
 
 .introdesc {
 	margin-top: 30px;
 	font-family: 'Playfair Display', serif;
 	color: #a51313;
+	text-shadow: 1px 1px 5px #00000052;
+}
+
+.workdesc {
+	margin-top: 30px;
+	font-family: 'Playfair Display', serif;
+	color: #a51313;
+	display: inline;
+	text-shadow: 1px 1px 5px #00000052;
 }
 
 .navlinks {
@@ -205,7 +212,15 @@ a {
 	height: 100%;
 	border-style: solid;
 }
-  
+
+.carousel-inner .carousel-item {
+	transition: -webkit-transform 2s ease;
+	transition: transform 2s ease;
+	transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+.carousel-control-prev, .carousel-control-next { visibility: visible; }	
+
 .fill {
     height: 100%;
 }
@@ -232,5 +247,6 @@ a {
     } 
 	.split-to-side {
 		width: 50%;
+		height: 100%;
 	}
 }
