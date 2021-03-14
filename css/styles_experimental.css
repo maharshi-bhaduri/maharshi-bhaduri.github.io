@@ -50,7 +50,7 @@
 }
 
 .fade-in-fade-out { 
-	animation: fadeInAnimation ease 5s; 
+	animation: fadeInAnimation ease 15s; 
 	animation-iteration-count: 1; 
 	animation-fill-mode: forwards; 
 }
