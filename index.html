@@ -38,7 +38,7 @@
         </div>
     </nav>
     
-    <div class="intro container-fluid intro-container">              
+    <div class="intro container-fluid">              
         <div class="row" style="text-align: center;">
             <div class="myblurb col-md-4 fill">
               <div class="row" style="text-align: center;">
@@ -46,24 +46,24 @@
                     <h1 class="introtitle">Maharshi</h1>
                     <h1 class="introtitle">Bhaduri</h1>
                 
-                    <h4 class="introdesc"><em>designs software</em></h4>
+                    <h4 class="introdesc"><em>software developer</em></h4>
                 </div>
-
                 <div class="split-to-side align-self-center">
                   
                     <img class='image-link' src='images/github.png'>
-                    <img class='image-link' src='images/heroku.png'>
                     <img class='image-link' src='images/linkedin.png'>
                     
                 </div>
               </div>
             </div>
-
+            
+            
             <div class="projectcar col-12 col-md-8 align-self-center">
+              <h4 class="workdesc">My Work:</h4>
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="images/car.png" class="d-block w-100" alt="...">
+                      <img src="images/car_fim.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                       <img src="images/car.png" class="d-block w-100" alt="...">
@@ -98,7 +98,12 @@
       <img src="images/img-default.png" 
       alt="a cute kitten">
    </picture> -->
-  
+   <script>   
+      $(document).ready(function() {
+      jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000  // 2 seconds
+      });
+    </script>
+
 </body>
 
 </html>
