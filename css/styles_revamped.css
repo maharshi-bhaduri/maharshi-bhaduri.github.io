@@ -8,14 +8,21 @@ a {
 }
 
 h1 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', serif;
     font-weight: normal;
-    font-size: 3rem;
-    margin: 10px;
+    margin:0px;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: 'Raleway', serif;
+    font-weight: normal;
+    margin:0px;
+    font-size: 1.2rem;
 }
 
 p {
-    font-family: 'Raleway', serif;
+
 }
 
 .panel {
@@ -35,13 +42,13 @@ p {
     color: #616161;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 1.15rem;
+    font-size: 1rem;
     transition: all 0.13s linear;
     margin: auto 2.5% auto 2.5%;
 }
 
 .link:hover {
-    font-size: 1.30rem;
+    font-size: 1.10rem;
     color: #000000;
 }
 
@@ -49,11 +56,26 @@ p {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .block1{
+    text-align: center;
     padding: 30px;
     flex-grow: 1;
+}
+
+.role {
+    font-family: 'Raleway', serif;
+    color: #3d3d3d;
+    margin:0px;
+    font-size: 1rem;
+}
+
+.techstack {
+    font-family: 'Raleway', serif;
+    color: #6e6e6e;
+    font-size:0.9rem;
 }
 
 .block2{
