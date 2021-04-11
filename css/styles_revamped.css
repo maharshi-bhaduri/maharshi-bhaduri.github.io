@@ -72,10 +72,25 @@ p {
     font-size: 1rem;
 }
 
-.techstack {
+.techstackfrontend {
     font-family: 'Raleway', serif;
-    color: #6e6e6e;
+    color: #845460;
     font-size:0.9rem;
+    margin-bottom: 0;
+}
+
+.techstackmiddlelayer {
+    font-family: 'Raleway', serif;
+    color: #126e82;
+    font-size:0.9rem;
+    margin-bottom: 0;
+}
+
+.techstackbackend {
+    font-family: 'Raleway', serif;
+    color: #2b4f60;
+    font-size:0.9rem;
+    margin-bottom: 0;
 }
 
 .block2{
