@@ -21,18 +21,26 @@ h2 {
     font-size: 1.2rem;
 }
 
-p {
-
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto
 }
 
 .panel {
     border-radius: 25px;
     background: #f7f7f7;
-    margin: 10px;
+    margin: 15px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 5px 10px 2px #a5a5a580;
 }
 
 .navbar {
     height: 50px;
+    padding: 0px;
+    margin: 5px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,32 +60,41 @@ p {
     color: #000000;
 }
 
+.myname-container {
+    height: 25vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myname-box {
+    height: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.myname {
+    font-family: 'Roboto', cursive;
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+.jobrole {
+    font-family: 'Raleway', serif;
+    color: #3d3d3d;
+    font-size: 1rem;
+    margin: 10px 0px 0px 0px; 
+}
+
 .container {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
-
-.block1{
-    text-align: center;
-    padding: 30px;
-    flex-grow: 1;
-}
-
-.role {
-    font-family: 'Raleway', serif;
-    color: #3d3d3d;
-    font-size: 1rem
-    ;border-bottom: 1px solid #000; 
-    line-height: 0.1em;
-    margin: 25px 0 30px; 
-}
-
-.role span { 
-     background:#f7f7f7; 
-     padding:0 10px;
- }
  
 .techstackfrontend {
     font-family: 'Raleway', serif;
@@ -100,8 +117,16 @@ p {
     margin-bottom: 0;
 }
 
-.block2{
-    padding: 30px;
-    flex-grow: 4;
-    text-align: center;
+.block{
+    flex-grow: 1;
 }
+
+@media screen and (min-width: 769px) {
+    .maincontainer   {
+      width: 70vw;
+    }
+    .myname {
+        font-size: 2.5rem;
+    }
+
+  }
