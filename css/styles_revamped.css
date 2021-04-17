@@ -1,6 +1,9 @@
 body {
     padding: 5px;
     /* min-width: fit-content; */
+    background-image: linear-gradient( #dcf5ee ,#eaf7ff);
+    
+    height: 100vh;
 }
 
 a {
@@ -31,10 +34,11 @@ h2 {
 .panel {
     border-radius: 25px;
     background: #f7f7f7;
+    /* background: #eff6fa; */
     margin: 15px;
     text-align: center;
     padding: 30px;
-    box-shadow: 0px 5px 10px 2px #a5a5a580;
+    box-shadow: 0px 5px 10px 2px #bbbbbb6b;
 }
 
 .navbar {
@@ -61,24 +65,36 @@ h2 {
 }
 
 .myname-container {
-    height: 25vh;
+    height: 20vh;
+    margin: 3em 0;
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.surrounding-brackets {
+    font-size: 7em;    
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #b5d4ddd3;
+}
+
 .myname-box {
     height: auto;
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin: 0px 5px;
 }
 
 .myname {
-    font-family: 'Roboto', cursive;
+    font-family: 'Roboto', serif;
     font-size: 1.8rem;
-    margin: 10px;
+    margin: 12px 0px 0px 0px;
 }
 
 .jobrole {
@@ -128,5 +144,7 @@ h2 {
     .myname {
         font-size: 2.5rem;
     }
-
+    .surrounding-brackets {
+        font-size: 10em;
+    }
   }
