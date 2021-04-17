@@ -1,7 +1,7 @@
 body {
     padding: 5px;
     /* min-width: fit-content; */
-    background-image: linear-gradient( #dcf5ee ,#eaf7ff);
+    background-image: linear-gradient( #f1fffb ,#eaf7ff);
     
     height: 100vh;
 }
@@ -143,6 +143,7 @@ h2 {
     }
     .myname {
         font-size: 2.5rem;
+        margin: 20px 0 0 0;
     }
     .surrounding-brackets {
         font-size: 10em;
