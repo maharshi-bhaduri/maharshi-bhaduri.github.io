@@ -120,6 +120,54 @@ h2 {
     margin: 10px 0px 0px 0px; 
 }
 
+
+/* flippity flip */
+
+p {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', serif;
+    margin: 0px 5px;
+  }
+  
+  .child1 {
+    perspective: 300px;
+  }
+  
+  .content {
+    color: white;
+  }
+  
+  .incard {
+    text-align: center;
+    transform-style: preserve-3d;
+    animation: flip 3.5s infinite alternate;
+  
+  }
+  
+  .cardfront {
+    background-color: white;
+    backface-visibility: hidden;
+    transform: translateY(50%);
+  }
+  
+  .cardback {
+    background-color: black;
+    backface-visibility: hidden;
+    transform: translateY(-50%) rotateX(180deg);
+  }
+  
+  @keyframes flip {
+    0% {transform: rotateX(0deg);}
+    10% {transform: rotateX(0deg);}
+    15% {transform: rotateX(-15deg);}
+    20% {transform: rotateX(0deg);}
+    90% {transform: rotateX(555deg);}
+    100% {transform: rotateX(540deg);}
+  }
+
+  /* flippity flip ends */
+
 .container {
     width: 100%;
     display: flex;
