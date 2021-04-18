@@ -1,8 +1,10 @@
 body {
     padding: 5px;
+    margin: 0px;
     /* min-width: fit-content; */
     /* think about it */
-    background-image: linear-gradient( #f1fffb ,#eaf7ff);
+    /* background-image: linear-gradient( #f1f1ff ,#eaf7ff); */
+    background-image: linear-gradient( #84dcdf ,#eaf7ff);
     height: 100vh;
 }
 
@@ -45,7 +47,8 @@ h2 {
 .panel {
     border-radius: 25px;
     background: #f7f7f7;
-    /* background: #eff6fa; */
+    /* background: #fae9e9dc; */
+    /* background: #ffefe9; */
     margin: 15px;
     text-align: center;
     padding: 30px;
@@ -89,8 +92,7 @@ h2 {
 
 .surrounding-brackets {
     font-size: 7em;    
-    font-family: sans-serif;
-    font-weight: 100;
+    font-family: sans-serif;    
     color: #b5d4ddd3;
 }
 
@@ -105,8 +107,9 @@ h2 {
 }
 
 .myname {
-    font-family: 'Roboto', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
+    color: #000000;
     margin: 12px 0px 0px 0px;
 }
 
@@ -175,6 +178,6 @@ h2 {
     }
     .panel:hover {
         transform: scale(1.042, 1.042);
-        box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.3);
     }
   }
