@@ -141,8 +141,8 @@ p {
   .incard {
     text-align: center;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     animation: flip 3.5s infinite alternate;
-  
   }
   
   .cardfront {
@@ -150,6 +150,7 @@ p {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform: translateY(50%);
+    -webkit-transform: translateY(50%);
   }
   
   .cardback {
@@ -157,6 +158,7 @@ p {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform: translateY(-50%) rotateX(180deg);
+    -webkit-transform: translateY(-50%) rotateX(180deg);
   }
   
   @keyframes flip {
