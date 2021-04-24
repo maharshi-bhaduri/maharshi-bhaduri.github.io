@@ -1,10 +1,6 @@
 body {
-    padding: 5px;
+    padding: 0px;
     margin: 0px;
-    /* min-width: fit-content; */
-    /* think about it */
-    /* background-image: linear-gradient( #f1f1ff ,#eaf7ff); */
-    background-image: linear-gradient( #84dcdf ,#eaf7ff);
     height: 100vh;
 }
 
@@ -26,11 +22,29 @@ h2 {
     font-size: 1.2rem;
 }
 
+.top-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient( #ace9eb ,#ffffff);
+    padding-top: 5px;
+}
+
 .maincontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0px auto
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 5px;
 }
 
 .nav-panel {
@@ -40,30 +54,27 @@ h2 {
     margin: 15px;
     text-align: center;
     padding: 30px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);    
 }
 
 .panel {
     border-radius: 25px;
     background: #f7f7f7;
-    /* background: #fae9e9dc; */
-    /* background: #ffefe9; */
     margin: 15px;
     text-align: center;
     padding: 30px;
-    /* box-shadow: 0px 5px 10px 2px #bbbbbb6b; */
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: all 0.3s ease-in-out;
 }
 
 .navbar {
     height: 50px;
-    padding: 0px;
+    padding: 0px 25px;
     margin: 5px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-grow:1;
 }
 
 .link {
@@ -72,7 +83,7 @@ h2 {
     text-align: center;
     font-size: 1rem;
     transition: all 0.13s linear;
-    margin: auto 2.5% auto 2.5%;
+    margin: auto 25px;
 }
 
 .link:hover {
@@ -172,6 +183,45 @@ p {
 
   /* flippity flip ends */
 
+.blurb {
+    text-align: center;
+}
+
+ul {
+    list-style-type:none;
+    padding:0px;
+    margin:5px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    top: 29px;
+    z-index: 1;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.stuff {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    position: relative;
+}
+
+.stuff:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext:hover {
+    visibility: visible;
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -205,7 +255,6 @@ p {
     flex-grow: 1;
 }
 
-
 .make-it-slow {
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: all 0.3s ease-in-out;
@@ -218,11 +267,11 @@ p {
   }
 
 @media screen and (min-width: 769px) {
-    .maincontainer   {
+    .container   {
       width: 70vw;
     }
     .myname {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin: 20px 0 0 0;
     }
     .surrounding-brackets {
@@ -230,6 +279,16 @@ p {
     }
     .panel:hover {
         transform: scale(1.042, 1.042);
-        box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .nav-container {
+        flex-direction: row-reverse;
+    }
+    .navbar {
+        width: 300px;
+        flex-grow: 0;
     }
   }
