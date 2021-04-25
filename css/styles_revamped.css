@@ -71,7 +71,7 @@ h2 {
 
 .navbar {
     height: 50px;
-    padding: 0px 25px;
+    padding: 0px 15px;
     margin: 5px 15px;
     display: flex;
     align-items: center;
@@ -88,9 +88,32 @@ h2 {
     margin: auto 25px;
 }
 
+.connect-link {
+    color: #616161;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    transition: all 0.13s linear;
+}
+
 .link:hover {
     font-size: 1.10rem;
     color: #000000;
+}
+
+.connect-link:hover {
+    font-size: 1.10rem;
+    color: #000000;
+}
+
+.connect {
+    background: #ef9c9c;
+    border-radius: 25px;
+    height: 40px;
+    display: grid;
+    align-content: center;
+    color: white;
+    padding: 0px 25px;
 }
 
 .myname-container {
@@ -212,7 +235,7 @@ ul {
 .stuff {
     text-decoration: underline;
     text-decoration-style: wavy;
-    text-decoration-color: red;
+    text-decoration-color: #ef9c9c;
     position: relative;
 }
 
@@ -290,7 +313,7 @@ ul {
         flex-direction: row-reverse;
     }
     .navbar {
-        width: 300px;
+        width: 303px;
         flex-grow: 0;
     }
   }
