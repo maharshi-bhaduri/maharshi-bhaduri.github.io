@@ -214,7 +214,7 @@ ul {
     position: relative;
 }
 
-.stuff:hover:focus .tooltiptext {
+.stuff:hover .tooltiptext {
     visibility: visible;
 }
 
